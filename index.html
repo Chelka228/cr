@@ -104,34 +104,14 @@
             width: 30px;
             height: 30px;
         }
-
-        .redirect-message {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            font-size: 2em;
-            color: white;
-            z-index: 2;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
     <div class="gradient-background"></div>
     <div class="header">CRYPTO RUSSIA</div>
 
-    <div class="redirect-message" id="redirectMessage">
-        ПЕРЕЙДІТЬ НА <a href="https://chelka228.github.io/antiddos/" style="color: yellow;">https://chelka228.github.io/antiddos/</a>
-    </div>
-
     <div class="content section">
-        <p><strong>Crypto Russia</strong> — это многопользовательский проект в стиле Role Play (RP) на платформе SAMP, созданный для тех, кто хочет погрузиться в атмосферу современной России. Наш проект предлагает реалистичную ролевую игру, где каждый может найти для себя подходящую роль і почати свій шлях.</p>
+        <p><strong>Crypto Russia</strong> — это многопользовательский проект в стиле Role Play (RP) на платформе SAMP, созданный для тех, кто хочет погрузиться в атмосферу современной России. Наш проект предлагает реалистичную ролевую игру, где каждый может найти для себя подходящую роль и начать собственный путь.</p>
     </div>
 
     <div class="content section">
@@ -144,8 +124,8 @@
         <ul>
             <li>Реалистичные профессии и карьеры: от полицейского и врача до предпринимателя и госслужащего — выберите свою роль и добейтесь успеха.</li>
             <li>Экономическая система: зарабатывайте деньги, покупайте недвижимость, открывайте бизнесы и участвуйте в экономике города.</li>
-            <li>Социальные возможности: знакомьтесь с другими игроками, создавайте семьи, вступайте в кланы, участвуйте в общественной жизни и развивайте своє окруження.</li>
-            <li>Интересные события и миссии: регулярные мероприятия, уникальные квесты и сценарії для ще більшого погруження в атмосферу RP.</li>
+            <li>Социальные возможности: знакомьтесь с другими игроками, создавайте семьи, вступайте в кланы, участвуйте в общественной жизни и развивайте своё окружение.</li>
+            <li>Интересные события и миссии: регулярные мероприятия, уникальные квесты и сценарии для ещё большего погружения в атмосферу RP.</li>
             <li>Государственные и криминальные структуры: становитесь частью полиции, армии, правительства или присоединяйтесь к криминальным группировкам и стройте свою историю.</li>
         </ul>
     </div>
@@ -168,7 +148,6 @@
 
     <script>
         const sections = document.querySelectorAll('.content');
-        const redirectMessage = document.getElementById('redirectMessage');
 
         window.addEventListener('scroll', () => {
             sections.forEach(section => {
@@ -182,15 +161,6 @@
                 }
             });
         });
-
-        // Перевірка URL
-        if (window.location.href === "https://chelka228.github.io/antiddos/") {
-            // Відкривається головна сторінка
-            redirectMessage.style.display = 'none';
-        } else {
-            // Відображається повідомлення про перенаправлення
-            redirectMessage.style.display = 'block';
-        }
     </script>
 </body>
 </html>
